@@ -4,13 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+import lombok.Data;
 
 
 @Entity
-public class Data {
+@Data
+public class Content {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    String Content;
+    private String Content;
 }

@@ -11,10 +11,11 @@ import java.util.List;
 @RequestMapping("/data")
 @RequiredArgsConstructor
 public class BackendController {
-    private BackendService service;
+
+    private final BackendService service;
 
     @GetMapping
-    public List<Data> getAll(){
+    public List<Content> getAll(){
         return service.getAll();
     }
 }

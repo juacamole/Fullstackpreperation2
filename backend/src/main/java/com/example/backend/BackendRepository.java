@@ -2,5 +2,5 @@ package com.example.backend;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BackendRepository extends JpaRepository {
+public interface BackendRepository extends JpaRepository<Content, Long> {
 }
